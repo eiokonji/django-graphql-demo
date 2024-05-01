@@ -6,5 +6,5 @@ from strawberry.django.views import AsyncGraphQLView
 
 urlpatterns = [
   path('recipe-steps', RecipeStepApiView.as_view()),
-  # path('graphql', AsyncGraphQLView.as_view(schema=schema))
+  path('graphql', AsyncGraphQLView.as_view(schema=schema))
 ]
